@@ -1,12 +1,138 @@
-:root{
+:root {
   --green: #59A030;
-  --dark-green:#41692A;
-
-  --dark-grey:#374148;
-  --light-gray:#151B1F;
+  --dark-green: #41692A;
+  --dark-grey: #374148;
+  --light-gray: #151B1F;
 }
 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: white;
+  text-align: center;
+}
+
+header {
+  background-color: var(--green);
+  padding: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.download-btn, .login-btn {
+  background-color: var(--dark-grey);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 50px;
+  padding: 50px;
+  background: white;
+}
+
+h1 {
+  font-size: 50px;
+  color: black;
+}
+
+.error-message {
+  font-size: 22px;
+  color: var(--green);
+}
+
+.error-code {
+  font-size: 16px;
+  color: var(--dark-grey);
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--green);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.leaf {
+  position: absolute;
+  width: 120px;
+  opacity: 0.7;
+}
+
+.leftLeaf1 {
+  position: absolute;
+  top: 50px;
+  left: 0;  /* Swap from left to right */
+  width: 150px;
+  opacity: 0.7;
+}
+
+.leftLeaf2 {
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Swap from left to right */
+  width: 150px;
+  opacity: 0.7;
+}
+
+.rightLeaf1 {
+  position: absolute;
+  top: 55px;
+  right: 0;  /* Swap from right to left */
+  width: 150px;
+  opacity: 0.7;
+}
+
+.rightLeaf2 {
+  position: absolute;
+  bottom: 0;
+  right: 0; /* Swap from right to left */
+  width: 150px;
+  opacity: 0.7;
+}
+
+footer {
+  background-color: var(--green);
+  padding: 10px;
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
