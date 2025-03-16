@@ -10,3 +10,112 @@
   margin:0;
   padding:0;
 }
+
+.leaf {
+  max-width: 2%;
+  height: auto;
+}
+
+#moreinfo {
+  font-size: 20px;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 80px;
+  width: 100%;
+  background: #59A030;
+}
+
+footer p {
+  color: white;
+  margin-top: 2rem;
+}
+
+p {
+  color: #59A030;
+  margin-left: 18rem;
+  margin-right: 18rem;
+}
+
+hr {
+  margin-left: 50rem;
+  margin-right: 50rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1:first-of-type {
+  margin-top: 2rem;
+}
+
+body {
+  background-image: url('/assets/Background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+nav {
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #59A030;
+}
+
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+ul :first-child {
+  border-right: none;
+}
+
+ul :nth-child(2) {
+  float: right;
+  background-color: #374148;
+  border-right: none;
+
+}
+
+ul :nth-child(3) {
+  float: right;
+  background-color: #374148;
+}
+
+ul :last-child {
+  float: right;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li button {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #151B1F;
+}
+
+li a:hover {
+  background-color: #151B1F;
+}
+}
