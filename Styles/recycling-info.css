@@ -9,4 +9,76 @@
 *{
   margin:0;
   padding:0;
+}:root{
+  --green: #59A030;
+  --dark-green:#41692A;
+
+  --dark-grey:#374148;
+  --blue-gray:#151B1F;
+
+  --general-padding: 12.5rem;
+  --general-margin: 12.5rem;
+}
+
+*{
+  margin:0;
+  padding:0;
+
+  font-family: "Inria Serif", serif;
+}
+
+hr {
+  margin:40px 100px;
+  border-top: 2px solid var(--dark-grey);
+}
+
+/*Homepage*/
+
+nav{
+  height: 90px;
+  padding:0 200px;
+  background-color: var(--green);
+
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav p{
+  display: inline-block;
+  color:white;
+}
+
+nav div{
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Heading*/
+.info-heading{
+  margin:0 var(--general-margin);
+
+  display:flex;
+  align-items: center;
+}
+
+/*info-text*/
+.info-text{
+  margin:20px var(--general-margin);
+}
+
+.info-text p{
+  color: #41692A;
+  font-size: 1.2rem;
+
+  margin-bottom: 10px;
+}
+
+/*Footer */
+footer{
+  height: 125px;
+  background-color: var(--green);
+  padding: 0 var(--general-padding);
+
+  color:white;
 }
