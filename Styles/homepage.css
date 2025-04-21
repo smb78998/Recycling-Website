@@ -1,5 +1,6 @@
 :root{
   --green: #59A030;
+  --light-green: #a5ce8e;
   --dark-green:#41692A;
 
   --dark-grey:#374148;
@@ -36,6 +37,9 @@ nav p{
   display: inline-block;
   color:white;
 }
+nav h1{
+  color:white;
+}
 
 nav div{
   width: 400px;
@@ -49,11 +53,49 @@ nav div{
   display:flex;
   align-items: center;
   justify-content: center;
-  gap: 400px;
+  gap: 50px;
 }
 
+.nav-button {
+	border-radius:10px;
+  border: none;
+	cursor:pointer;
+	color:var(--green);
+  background-color: white;
+  padding:5px;
+	font-family:Arial;
+	text-decoration:none;
+}
+.nav-button:hover {
+	background-color:var(--light-green);
+  color: #151B1F;
+}
+
+
+
+
+.landing-button {
+	background-color:var(--green);
+	border-radius:10px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:17px 61px;
+	text-decoration:none;
+}
+.landing-button:hover {
+	background-color:var(--light-green);
+  color: #151B1F;
+}
+.landing-button:active {
+	position:relative;
+	top:1px;
+}
+
+    
+
 .landing-text{
-  width: 450px;
+  max-width: 450px;
 }
 
 .landing-text h1{
@@ -64,6 +106,7 @@ nav div{
   font-size: 2rem;
 }
 
+/*key-features*/
 .key-features{
   margin: 40px var(--general-margin);
   display: flex;
@@ -71,36 +114,54 @@ nav div{
   align-items: center;
 }
 .key-features h2{
+  margin: 60px var(--general-margin);
   font-size: 2.5rem;
+  border-bottom:#151B1F solid 1px;
+  width:50%;
+  text-align: center;
 }
 
 .key-features--text{
-  margin-top: 20px;
+  padding-top: 20px;
 
   width:100%; /*fixes issue of paretn being flex*/
   display: flex;
   justify-content:space-evenly;
+
 }
 
 .key-features--text--box{
-  width:200px;
+  max-width:300px;
   height: 300px;
   color:white;
   background-color: var(--green);
   border-radius: 20px;
+  padding: 20px;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  text-align: center;
 }
 /*About Us */
 .about{
   height:300px;
-  margin: var(--general-margin);
+  margin: 100px var(--general-margin);
   background-color: var(--blue-gray);
 
   color:white;
   display:flex;
+  align-items: center;
+
+  padding: 20px;
 }
 
 .about h2{
-  font-size: 3.5rem;
+  font-size: 4rem;
+  padding-left: 10%;
 }
 
 .about p{
@@ -121,6 +182,8 @@ nav div{
 
   display:flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .city-orlando p{
@@ -134,4 +197,70 @@ footer{
   padding: 0 var(--general-padding);
 
   color:white;
+}
+
+
+@media (max-width: 768px) {
+  :root {
+    --general-padding: 10%;
+    --general-margin: 10%;
+  }
+
+  .landing-text h1,
+  .about h2 {
+    font-size: 2.5rem;
+  }
+
+  .landing-text p,
+  .about p {
+    font-size: 1.2rem;
+  }
+
+  .key-features h2 {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .key-features--text--box{
+    width:100%;
+    border-radius: 0;
+    gap:0px;
+  }
+
+/*make nave moble freindly*/
+nav {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 20px;
+  gap: 10px;
+  text-align: center;
+}
+
+nav h1{
+  font-size: 2rem;
+  color:white;
+
+}
+
+nav div {
+  border-top: white 1px solid;
+  padding-top:10px;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  gap: 10px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+/*flex wrap , flex displays on page*/
+.landing,
+.key-features--text {
+  flex-wrap: wrap;
+}
 }
